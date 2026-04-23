@@ -1,0 +1,23 @@
+2026-04-23 11:56:32 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 11:56:32 [DEBUG] middleware.py:44 - [log_before_model]HumanMessage | 小爱帮我查询我现在城市的天气 
+2026-04-23 11:56:35 [INFO] middleware.py:23 - [tool_monitor]执行工具,get_user_location
+2026-04-23 11:56:35 [INFO] middleware.py:24 - [tool_monitor]传入参数,{}
+2026-04-23 11:56:36 [WARNING] agent_tools.py:136 - [get_user_location]高德返回失败 info=INVALID_USER_KEY infocode=10001 ip=117.147.101.56
+2026-04-23 11:56:36 [INFO] middleware.py:28 - [tool_monitor]工具,get_user_location调用成功
+2026-04-23 11:56:36 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有3条消息。
+2026-04-23 11:56:36 [DEBUG] middleware.py:44 - [log_before_model]ToolMessage | 未知城市 
+2026-04-23 12:14:44 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-23 12:14:44 [DEBUG] middleware.py:44 - [log_before_model]HumanMessage | 小爱帮我查询一下我现在城市的天气 
+2026-04-23 12:14:47 [INFO] middleware.py:23 - [tool_monitor]执行工具,get_user_location
+2026-04-23 12:14:47 [INFO] middleware.py:24 - [tool_monitor]传入参数,{}
+2026-04-23 12:14:48 [INFO] middleware.py:28 - [tool_monitor]工具,get_user_location调用成功
+2026-04-23 12:14:48 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有3条消息。
+2026-04-23 12:14:48 [DEBUG] middleware.py:44 - [log_before_model]ToolMessage | 杭州市 
+2026-04-23 12:14:50 [INFO] middleware.py:23 - [tool_monitor]执行工具,get_weather
+2026-04-23 12:14:50 [INFO] middleware.py:24 - [tool_monitor]传入参数,{'city': '杭州市'}
+2026-04-23 12:14:50 [INFO] middleware.py:28 - [tool_monitor]工具,get_weather调用成功
+2026-04-23 12:14:51 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有5条消息。
+2026-04-23 12:14:51 [DEBUG] middleware.py:44 - [log_before_model]ToolMessage | 城市杭州市天气为阴，气温14摄氏度，空气湿度89%，东北风≤3级，数据发布时间2026-04-23 12:04:44。 
+2026-04-23 14:10:08 [ERROR] agent_tool_zzy.py:38 - 无法获取ip地址,cannot use a string pattern on a bytes-like object
+2026-04-23 17:08:00 [ERROR] agent_tool_ceshi.py:108 - [get_weather]天气查询失败 city=杭州市 err=城市解析失败: OK
+2026-04-23 17:12:31 [ERROR] agent_tool_ceshi.py:108 - [get_weather]天气查询失败 city=杭州市 err=城市解析失败: OK

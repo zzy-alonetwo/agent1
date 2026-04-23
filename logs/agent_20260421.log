@@ -1,0 +1,310 @@
+2026-04-21 00:08:43 [ERROR] vector_store.py:96 - [加载知识库]d:\Flask\Agent_Project\data\扫地机器人100问.pdf,加载失败,`pypdf` package not found, please install it with `pip install pypdf`
+Traceback (most recent call last):
+  File "D:\Flask\env\Lib\site-packages\langchain_community\document_loaders\parsers\pdf.py", line 359, in lazy_parse
+    import pypdf
+ModuleNotFoundError: No module named 'pypdf'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Flask\Agent_Project\rag\vector_store.py", line 79, in load_document
+    documents:list[Document]=get_file_documents(path)
+                             ~~~~~~~~~~~~~~~~~~^^^^^^
+  File "d:\Flask\Agent_Project\rag\vector_store.py", line 66, in get_file_documents
+    return pdf_loader(read_path)
+  File "d:\Flask\Agent_Project\utils\file_handler.py", line 46, in pdf_loader
+    return  PyPDFLoader(filepath,passwd).load()
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\Flask\env\Lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+  File "D:\Flask\env\Lib\site-packages\langchain_community\document_loaders\pdf.py", line 305, in lazy_load
+    yield from self.parser.lazy_parse(blob)
+  File "D:\Flask\env\Lib\site-packages\langchain_community\document_loaders\parsers\pdf.py", line 361, in lazy_parse
+    raise ImportError(
+        "`pypdf` package not found, please install it with `pip install pypdf`"
+    )
+ImportError: `pypdf` package not found, please install it with `pip install pypdf`
+2026-04-21 00:08:43 [ERROR] vector_store.py:96 - [加载知识库]d:\Flask\Agent_Project\data\扫地机器人100问2.txt,加载失败,TextLoader.__init__() got multiple values for argument 'encoding'
+Traceback (most recent call last):
+  File "d:\Flask\Agent_Project\rag\vector_store.py", line 79, in load_document
+    documents:list[Document]=get_file_documents(path)
+                             ~~~~~~~~~~~~~~~~~~^^^^^^
+  File "d:\Flask\Agent_Project\rag\vector_store.py", line 64, in get_file_documents
+    return txt_loader(read_path)
+  File "d:\Flask\Agent_Project\utils\file_handler.py", line 51, in txt_loader
+    return TextLoader(filepath,passwd,encoding='utf-8').load()
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: TextLoader.__init__() got multiple values for argument 'encoding'
+2026-04-21 00:08:43 [ERROR] vector_store.py:96 - [加载知识库]d:\Flask\Agent_Project\data\扫拖一体机器人100问.txt,加载失败,TextLoader.__init__() got multiple values for argument 'encoding'
+Traceback (most recent call last):
+  File "d:\Flask\Agent_Project\rag\vector_store.py", line 79, in load_document
+    documents:list[Document]=get_file_documents(path)
+                             ~~~~~~~~~~~~~~~~~~^^^^^^
+  File "d:\Flask\Agent_Project\rag\vector_store.py", line 64, in get_file_documents
+    return txt_loader(read_path)
+  File "d:\Flask\Agent_Project\utils\file_handler.py", line 51, in txt_loader
+    return TextLoader(filepath,passwd,encoding='utf-8').load()
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: TextLoader.__init__() got multiple values for argument 'encoding'
+2026-04-21 00:08:43 [ERROR] vector_store.py:96 - [加载知识库]d:\Flask\Agent_Project\data\故障排除.txt,加载失败,TextLoader.__init__() got multiple values for argument 'encoding'
+Traceback (most recent call last):
+  File "d:\Flask\Agent_Project\rag\vector_store.py", line 79, in load_document
+    documents:list[Document]=get_file_documents(path)
+                             ~~~~~~~~~~~~~~~~~~^^^^^^
+  File "d:\Flask\Agent_Project\rag\vector_store.py", line 64, in get_file_documents
+    return txt_loader(read_path)
+  File "d:\Flask\Agent_Project\utils\file_handler.py", line 51, in txt_loader
+    return TextLoader(filepath,passwd,encoding='utf-8').load()
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: TextLoader.__init__() got multiple values for argument 'encoding'
+2026-04-21 00:08:43 [ERROR] vector_store.py:96 - [加载知识库]d:\Flask\Agent_Project\data\维护保养.txt,加载失败,TextLoader.__init__() got multiple values for argument 'encoding'
+Traceback (most recent call last):
+  File "d:\Flask\Agent_Project\rag\vector_store.py", line 79, in load_document
+    documents:list[Document]=get_file_documents(path)
+                             ~~~~~~~~~~~~~~~~~~^^^^^^
+  File "d:\Flask\Agent_Project\rag\vector_store.py", line 64, in get_file_documents
+    return txt_loader(read_path)
+  File "d:\Flask\Agent_Project\utils\file_handler.py", line 51, in txt_loader
+    return TextLoader(filepath,passwd,encoding='utf-8').load()
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: TextLoader.__init__() got multiple values for argument 'encoding'
+2026-04-21 00:08:43 [ERROR] vector_store.py:96 - [加载知识库]d:\Flask\Agent_Project\data\选购指南.txt,加载失败,TextLoader.__init__() got multiple values for argument 'encoding'
+Traceback (most recent call last):
+  File "d:\Flask\Agent_Project\rag\vector_store.py", line 79, in load_document
+    documents:list[Document]=get_file_documents(path)
+                             ~~~~~~~~~~~~~~~~~~^^^^^^
+  File "d:\Flask\Agent_Project\rag\vector_store.py", line 64, in get_file_documents
+    return txt_loader(read_path)
+  File "d:\Flask\Agent_Project\utils\file_handler.py", line 51, in txt_loader
+    return TextLoader(filepath,passwd,encoding='utf-8').load()
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: TextLoader.__init__() got multiple values for argument 'encoding'
+2026-04-21 00:09:21 [INFO] vector_store.py:93 - [加载知识库]d:\Flask\Agent_Project\data\扫地机器人100问.pdf内容加载成功
+2026-04-21 00:09:26 [INFO] vector_store.py:93 - [加载知识库]d:\Flask\Agent_Project\data\扫地机器人100问2.txt内容加载成功
+2026-04-21 00:09:33 [INFO] vector_store.py:93 - [加载知识库]d:\Flask\Agent_Project\data\扫拖一体机器人100问.txt内容加载成功
+2026-04-21 00:09:46 [INFO] vector_store.py:93 - [加载知识库]d:\Flask\Agent_Project\data\故障排除.txt内容加载成功
+2026-04-21 00:09:53 [INFO] vector_store.py:93 - [加载知识库]d:\Flask\Agent_Project\data\维护保养.txt内容加载成功
+2026-04-21 00:10:00 [INFO] vector_store.py:93 - [加载知识库]d:\Flask\Agent_Project\data\选购指南.txt内容加载成功
+2026-04-21 00:16:47 [INFO] vector_store.py:72 - [加载知识库]d:\Flask\Agent_Project\data\扫地机器人100问.pdf已经存入知识库中，跳过
+2026-04-21 00:16:47 [INFO] vector_store.py:72 - [加载知识库]d:\Flask\Agent_Project\data\扫地机器人100问2.txt已经存入知识库中，跳过
+2026-04-21 00:16:47 [INFO] vector_store.py:72 - [加载知识库]d:\Flask\Agent_Project\data\扫拖一体机器人100问.txt已经存入知识库中，跳过
+2026-04-21 00:16:47 [INFO] vector_store.py:72 - [加载知识库]d:\Flask\Agent_Project\data\故障排除.txt已经存入知识库中，跳过
+2026-04-21 00:16:47 [INFO] vector_store.py:72 - [加载知识库]d:\Flask\Agent_Project\data\维护保养.txt已经存入知识库中，跳过
+2026-04-21 00:16:47 [INFO] vector_store.py:72 - [加载知识库]d:\Flask\Agent_Project\data\选购指南.txt已经存入知识库中，跳过
+2026-04-21 00:18:08 [INFO] vector_store.py:64 - [加载知识库]D:\Flask\Agent_Project\data\扫地机器人100问.pdf已经存入知识库中，跳过
+2026-04-21 00:18:08 [INFO] vector_store.py:64 - [加载知识库]D:\Flask\Agent_Project\data\扫地机器人100问2.txt已经存入知识库中，跳过
+2026-04-21 00:18:08 [INFO] vector_store.py:64 - [加载知识库]D:\Flask\Agent_Project\data\扫拖一体机器人100问.txt已经存入知识库中，跳过
+2026-04-21 00:18:08 [INFO] vector_store.py:64 - [加载知识库]D:\Flask\Agent_Project\data\故障排除.txt已经存入知识库中，跳过
+2026-04-21 00:18:08 [INFO] vector_store.py:64 - [加载知识库]D:\Flask\Agent_Project\data\维护保养.txt已经存入知识库中，跳过
+2026-04-21 00:18:08 [INFO] vector_store.py:64 - [加载知识库]D:\Flask\Agent_Project\data\选购指南.txt已经存入知识库中，跳过
+2026-04-21 00:25:01 [INFO] vector_store.py:64 - [加载知识库]D:\Flask\Agent_Project\data\扫地机器人100问.pdf已经存入知识库中，跳过
+2026-04-21 00:25:01 [INFO] vector_store.py:64 - [加载知识库]D:\Flask\Agent_Project\data\扫地机器人100问2.txt已经存入知识库中，跳过
+2026-04-21 00:25:01 [INFO] vector_store.py:64 - [加载知识库]D:\Flask\Agent_Project\data\扫拖一体机器人100问.txt已经存入知识库中，跳过
+2026-04-21 00:25:01 [INFO] vector_store.py:64 - [加载知识库]D:\Flask\Agent_Project\data\故障排除.txt已经存入知识库中，跳过
+2026-04-21 00:25:01 [INFO] vector_store.py:64 - [加载知识库]D:\Flask\Agent_Project\data\维护保养.txt已经存入知识库中，跳过
+2026-04-21 00:25:01 [INFO] vector_store.py:64 - [加载知识库]D:\Flask\Agent_Project\data\选购指南.txt已经存入知识库中，跳过
+2026-04-21 11:10:40 [INFO] vector_store.py:64 - [加载知识库]D:\Flask\Agent_Project\data\扫地机器人100问.pdf已经存入知识库中，跳过
+2026-04-21 11:10:40 [INFO] vector_store.py:64 - [加载知识库]D:\Flask\Agent_Project\data\扫地机器人100问2.txt已经存入知识库中，跳过
+2026-04-21 11:10:40 [INFO] vector_store.py:64 - [加载知识库]D:\Flask\Agent_Project\data\扫拖一体机器人100问.txt已经存入知识库中，跳过
+2026-04-21 11:10:40 [INFO] vector_store.py:64 - [加载知识库]D:\Flask\Agent_Project\data\故障排除.txt已经存入知识库中，跳过
+2026-04-21 11:10:40 [INFO] vector_store.py:64 - [加载知识库]D:\Flask\Agent_Project\data\维护保养.txt已经存入知识库中，跳过
+2026-04-21 11:10:40 [INFO] vector_store.py:64 - [加载知识库]D:\Flask\Agent_Project\data\选购指南.txt已经存入知识库中，跳过
+2026-04-21 11:44:12 [INFO] vector_store.py:78 - [加载知识库]d:\Flask\Agent_Project\data\扫地机器人100问.pdf已经存入知识库中，跳过
+2026-04-21 11:44:12 [INFO] vector_store.py:78 - [加载知识库]d:\Flask\Agent_Project\data\扫地机器人100问2.txt已经存入知识库中，跳过
+2026-04-21 11:44:12 [INFO] vector_store.py:78 - [加载知识库]d:\Flask\Agent_Project\data\扫拖一体机器人100问.txt已经存入知识库中，跳过
+2026-04-21 11:44:12 [INFO] vector_store.py:78 - [加载知识库]d:\Flask\Agent_Project\data\故障排除.txt已经存入知识库中，跳过
+2026-04-21 11:44:12 [INFO] vector_store.py:78 - [加载知识库]d:\Flask\Agent_Project\data\维护保养.txt已经存入知识库中，跳过
+2026-04-21 11:44:12 [INFO] vector_store.py:78 - [加载知识库]d:\Flask\Agent_Project\data\选购指南.txt已经存入知识库中，跳过
+2026-04-21 11:48:19 [INFO] vector_store.py:68 - [加载知识库]D:\Flask\Agent_Project\data\扫地机器人100问.pdf已经存入知识库中，跳过
+2026-04-21 11:48:19 [INFO] vector_store.py:68 - [加载知识库]D:\Flask\Agent_Project\data\扫地机器人100问2.txt已经存入知识库中，跳过
+2026-04-21 11:48:19 [INFO] vector_store.py:68 - [加载知识库]D:\Flask\Agent_Project\data\扫拖一体机器人100问.txt已经存入知识库中，跳过
+2026-04-21 11:48:19 [INFO] vector_store.py:68 - [加载知识库]D:\Flask\Agent_Project\data\故障排除.txt已经存入知识库中，跳过
+2026-04-21 11:48:19 [INFO] vector_store.py:68 - [加载知识库]D:\Flask\Agent_Project\data\维护保养.txt已经存入知识库中，跳过
+2026-04-21 11:48:19 [INFO] vector_store.py:68 - [加载知识库]D:\Flask\Agent_Project\data\选购指南.txt已经存入知识库中，跳过
+2026-04-21 12:02:12 [INFO] vector_store.py:68 - [加载知识库]D:\Flask\Agent_Project\data\扫地机器人100问.pdf已经存入知识库中，跳过
+2026-04-21 12:02:12 [INFO] vector_store.py:68 - [加载知识库]D:\Flask\Agent_Project\data\扫地机器人100问2.txt已经存入知识库中，跳过
+2026-04-21 12:02:12 [INFO] vector_store.py:68 - [加载知识库]D:\Flask\Agent_Project\data\扫拖一体机器人100问.txt已经存入知识库中，跳过
+2026-04-21 12:02:12 [INFO] vector_store.py:68 - [加载知识库]D:\Flask\Agent_Project\data\故障排除.txt已经存入知识库中，跳过
+2026-04-21 12:02:12 [INFO] vector_store.py:68 - [加载知识库]D:\Flask\Agent_Project\data\维护保养.txt已经存入知识库中，跳过
+2026-04-21 12:02:12 [INFO] vector_store.py:68 - [加载知识库]D:\Flask\Agent_Project\data\选购指南.txt已经存入知识库中，跳过
+2026-04-21 12:03:41 [INFO] vector_store.py:68 - [加载知识库]D:\Flask\Agent_Project\data\扫地机器人100问.pdf已经存入知识库中，跳过
+2026-04-21 12:03:41 [INFO] vector_store.py:68 - [加载知识库]D:\Flask\Agent_Project\data\扫地机器人100问2.txt已经存入知识库中，跳过
+2026-04-21 12:03:41 [INFO] vector_store.py:68 - [加载知识库]D:\Flask\Agent_Project\data\扫拖一体机器人100问.txt已经存入知识库中，跳过
+2026-04-21 12:03:41 [INFO] vector_store.py:68 - [加载知识库]D:\Flask\Agent_Project\data\故障排除.txt已经存入知识库中，跳过
+2026-04-21 12:03:41 [INFO] vector_store.py:68 - [加载知识库]D:\Flask\Agent_Project\data\维护保养.txt已经存入知识库中，跳过
+2026-04-21 12:03:41 [INFO] vector_store.py:68 - [加载知识库]D:\Flask\Agent_Project\data\选购指南.txt已经存入知识库中，跳过
+2026-04-21 12:05:28 [INFO] vector_store.py:68 - [加载知识库]D:\Flask\Agent_Project\data\扫地机器人100问.pdf已经存入知识库中，跳过
+2026-04-21 12:05:28 [INFO] vector_store.py:68 - [加载知识库]D:\Flask\Agent_Project\data\扫地机器人100问2.txt已经存入知识库中，跳过
+2026-04-21 12:05:28 [INFO] vector_store.py:68 - [加载知识库]D:\Flask\Agent_Project\data\扫拖一体机器人100问.txt已经存入知识库中，跳过
+2026-04-21 12:05:28 [INFO] vector_store.py:68 - [加载知识库]D:\Flask\Agent_Project\data\故障排除.txt已经存入知识库中，跳过
+2026-04-21 12:05:28 [INFO] vector_store.py:68 - [加载知识库]D:\Flask\Agent_Project\data\维护保养.txt已经存入知识库中，跳过
+2026-04-21 12:05:28 [INFO] vector_store.py:68 - [加载知识库]D:\Flask\Agent_Project\data\选购指南.txt已经存入知识库中，跳过
+2026-04-21 12:09:19 [INFO] vector_store.py:68 - [加载知识库]D:\Flask\Agent_Project\data\扫地机器人100问.pdf已经存入知识库中，跳过
+2026-04-21 12:09:19 [INFO] vector_store.py:68 - [加载知识库]D:\Flask\Agent_Project\data\扫地机器人100问2.txt已经存入知识库中，跳过
+2026-04-21 12:09:19 [INFO] vector_store.py:68 - [加载知识库]D:\Flask\Agent_Project\data\扫拖一体机器人100问.txt已经存入知识库中，跳过
+2026-04-21 12:09:19 [INFO] vector_store.py:68 - [加载知识库]D:\Flask\Agent_Project\data\故障排除.txt已经存入知识库中，跳过
+2026-04-21 12:09:19 [INFO] vector_store.py:68 - [加载知识库]D:\Flask\Agent_Project\data\维护保养.txt已经存入知识库中，跳过
+2026-04-21 12:09:19 [INFO] vector_store.py:68 - [加载知识库]D:\Flask\Agent_Project\data\选购指南.txt已经存入知识库中，跳过
+2026-04-21 12:10:29 [INFO] vector_store.py:85 - [加载知识库]D:\Flask\Agent_Project\data\扫地机器人100问.pdf内容加载成功
+2026-04-21 12:10:33 [INFO] vector_store.py:85 - [加载知识库]D:\Flask\Agent_Project\data\扫地机器人100问2.txt内容加载成功
+2026-04-21 12:10:37 [INFO] vector_store.py:85 - [加载知识库]D:\Flask\Agent_Project\data\扫拖一体机器人100问.txt内容加载成功
+2026-04-21 12:10:46 [INFO] vector_store.py:85 - [加载知识库]D:\Flask\Agent_Project\data\故障排除.txt内容加载成功
+2026-04-21 12:10:50 [INFO] vector_store.py:85 - [加载知识库]D:\Flask\Agent_Project\data\维护保养.txt内容加载成功
+2026-04-21 12:10:55 [INFO] vector_store.py:85 - [加载知识库]D:\Flask\Agent_Project\data\选购指南.txt内容加载成功
+2026-04-21 12:11:56 [INFO] vector_store.py:68 - [加载知识库]D:\Flask\Agent_Project\data\扫地机器人100问.pdf已经存入知识库中，跳过
+2026-04-21 12:11:56 [INFO] vector_store.py:68 - [加载知识库]D:\Flask\Agent_Project\data\扫地机器人100问2.txt已经存入知识库中，跳过
+2026-04-21 12:11:56 [INFO] vector_store.py:68 - [加载知识库]D:\Flask\Agent_Project\data\扫拖一体机器人100问.txt已经存入知识库中，跳过
+2026-04-21 12:11:56 [INFO] vector_store.py:68 - [加载知识库]D:\Flask\Agent_Project\data\故障排除.txt已经存入知识库中，跳过
+2026-04-21 12:11:56 [INFO] vector_store.py:68 - [加载知识库]D:\Flask\Agent_Project\data\维护保养.txt已经存入知识库中，跳过
+2026-04-21 12:11:56 [INFO] vector_store.py:68 - [加载知识库]D:\Flask\Agent_Project\data\选购指南.txt已经存入知识库中，跳过
+2026-04-21 13:51:50 [WARNING] agent_tools.py:84 - [fetch_external_data]未能检索到用户:1001在2025-01的使用记录数据
+2026-04-21 13:53:13 [WARNING] agent_tools.py:84 - [fetch_external_data]未能检索到用户:1001在2025-01的使用记录数据
+2026-04-21 15:03:02 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-21 15:03:02 [DEBUG] middleware.py:44 - [log_before_model]HumanMessage | 扫地机器人在我所在的地区下该如何保养 
+2026-04-21 15:03:05 [INFO] middleware.py:23 - [tool_monitor]执行工具,get_user_location
+2026-04-21 15:03:05 [INFO] middleware.py:24 - [tool_monitor]传入参数,{}
+2026-04-21 15:03:05 [INFO] middleware.py:28 - [tool_monitor]工具,get_user_location调用成功
+2026-04-21 15:03:05 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有3条消息。
+2026-04-21 15:03:05 [DEBUG] middleware.py:44 - [log_before_model]ToolMessage | 杭州 
+2026-04-21 15:03:08 [INFO] middleware.py:23 - [tool_monitor]执行工具,get_weather
+2026-04-21 15:03:08 [INFO] middleware.py:24 - [tool_monitor]传入参数,{'city': '杭州'}
+2026-04-21 15:03:08 [INFO] middleware.py:28 - [tool_monitor]工具,get_weather调用成功
+2026-04-21 15:03:08 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有5条消息。
+2026-04-21 15:03:08 [DEBUG] middleware.py:44 - [log_before_model]ToolMessage | 城市杭州天气为晴天，26摄氏度，空气湿度50%，南风1级，AQI21，最近6小时降雨概率极低 
+2026-04-21 15:03:13 [INFO] middleware.py:23 - [tool_monitor]执行工具,rag_summarize
+2026-04-21 15:03:13 [INFO] middleware.py:24 - [tool_monitor]传入参数,{'query': '扫地机器人在湿度50%左右的亚热带季风气候地区如何保养'}
+2026-04-21 15:03:17 [INFO] middleware.py:28 - [tool_monitor]工具,rag_summarize调用成功
+2026-04-21 15:03:17 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有7条消息。
+2026-04-21 15:03:17 [DEBUG] middleware.py:44 - [log_before_model]ToolMessage | 在湿度50%左右的亚热带季风气候地区，扫地机器人应减少拖地频次，优先使用干拖模式；每次使用后及时清理尘盒、滤网及机身底部泥沙；每日用干软布擦拭机身外壳并晾干耗材；每周进行一次除湿处理，防止潮湿导致部件受潮或灰尘结块。 
+2026-04-21 15:04:30 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-21 15:04:30 [DEBUG] middleware.py:44 - [log_before_model]HumanMessage | 扫地机器人在我所在的地区下该如何保养 
+2026-04-21 15:04:32 [INFO] middleware.py:23 - [tool_monitor]执行工具,get_user_location
+2026-04-21 15:04:32 [INFO] middleware.py:24 - [tool_monitor]传入参数,{}
+2026-04-21 15:04:32 [INFO] middleware.py:28 - [tool_monitor]工具,get_user_location调用成功
+2026-04-21 15:04:32 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有3条消息。
+2026-04-21 15:04:32 [DEBUG] middleware.py:44 - [log_before_model]ToolMessage | 合肥 
+2026-04-21 15:04:36 [INFO] middleware.py:23 - [tool_monitor]执行工具,get_weather
+2026-04-21 15:04:36 [INFO] middleware.py:24 - [tool_monitor]传入参数,{'city': '合肥'}
+2026-04-21 15:04:36 [INFO] middleware.py:28 - [tool_monitor]工具,get_weather调用成功
+2026-04-21 15:04:36 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有5条消息。
+2026-04-21 15:04:36 [DEBUG] middleware.py:44 - [log_before_model]ToolMessage | 城市合肥天气为晴天，26摄氏度，空气湿度50%，南风1级，AQI21，最近6小时降雨概率极低 
+2026-04-21 15:04:41 [INFO] middleware.py:23 - [tool_monitor]执行工具,rag_summarize
+2026-04-21 15:04:41 [INFO] middleware.py:24 - [tool_monitor]传入参数,{'query': '扫地机器人在湿度50%、晴天、空气质量良好的环境下如何保养'}
+2026-04-21 15:04:44 [INFO] middleware.py:28 - [tool_monitor]工具,rag_summarize调用成功
+2026-04-21 15:04:44 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有7条消息。
+2026-04-21 15:04:44 [DEBUG] middleware.py:44 - [log_before_model]ToolMessage | 在湿度50%、晴天、空气质量良好的环境下，扫地机器人每次使用后应用干软布擦拭机身外壳，及时清理防撞条缝隙中的毛发和线头，防止卡顿。 
+2026-04-21 16:41:19 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-21 16:41:19 [DEBUG] middleware.py:44 - [log_before_model]HumanMessage | 你好 
+2026-04-21 16:42:06 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-21 16:42:06 [DEBUG] middleware.py:44 - [log_before_model]HumanMessage | 你好 
+2026-04-21 16:42:50 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-21 16:42:50 [DEBUG] middleware.py:44 - [log_before_model]HumanMessage | 在我当前城市的天气下，机器人该如何保养？ 
+2026-04-21 16:42:54 [INFO] middleware.py:23 - [tool_monitor]执行工具,get_user_location
+2026-04-21 16:42:54 [INFO] middleware.py:24 - [tool_monitor]传入参数,{}
+2026-04-21 16:42:54 [INFO] middleware.py:28 - [tool_monitor]工具,get_user_location调用成功
+2026-04-21 16:42:54 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有3条消息。
+2026-04-21 16:42:54 [DEBUG] middleware.py:44 - [log_before_model]ToolMessage | 深圳 
+2026-04-21 16:42:57 [INFO] middleware.py:23 - [tool_monitor]执行工具,get_weather
+2026-04-21 16:42:57 [INFO] middleware.py:24 - [tool_monitor]传入参数,{'city': '深圳'}
+2026-04-21 16:42:57 [INFO] middleware.py:28 - [tool_monitor]工具,get_weather调用成功
+2026-04-21 16:42:57 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有5条消息。
+2026-04-21 16:42:57 [DEBUG] middleware.py:44 - [log_before_model]ToolMessage | 城市深圳天气为晴天，26摄氏度，空气湿度50%，南风1级，AQI21，最近6小时降雨概率极低 
+2026-04-21 16:43:02 [INFO] middleware.py:23 - [tool_monitor]执行工具,rag_summarize
+2026-04-21 16:43:02 [INFO] middleware.py:24 - [tool_monitor]传入参数,{'query': '扫地机器人在温暖湿润环境下的保养建议'}
+2026-04-21 16:43:06 [INFO] middleware.py:28 - [tool_monitor]工具,rag_summarize调用成功
+2026-04-21 16:43:06 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有7条消息。
+2026-04-21 16:43:06 [DEBUG] middleware.py:44 - [log_before_model]ToolMessage | 在温暖湿润环境下，扫地机器人使用后应及时清理拖布、水箱，防止滋生细菌或产生异味；避免在卫生间等有积水区域拖地，仅进行扫地作业；每次使用后擦拭机身外壳及底部，确保无水渍残留；若环境湿度高，建议减少拖地频次，以防灰尘结块或内部受潮。 
+2026-04-21 16:44:16 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-21 16:44:16 [DEBUG] middleware.py:44 - [log_before_model]HumanMessage | 在我当前城市的天气下，这个扫地机器人该如何保养 
+2026-04-21 16:44:19 [INFO] middleware.py:23 - [tool_monitor]执行工具,get_user_location
+2026-04-21 16:44:19 [INFO] middleware.py:24 - [tool_monitor]传入参数,{}
+2026-04-21 16:44:19 [INFO] middleware.py:28 - [tool_monitor]工具,get_user_location调用成功
+2026-04-21 16:44:19 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有3条消息。
+2026-04-21 16:44:19 [DEBUG] middleware.py:44 - [log_before_model]ToolMessage | 杭州 
+2026-04-21 16:44:22 [INFO] middleware.py:23 - [tool_monitor]执行工具,get_weather
+2026-04-21 16:44:22 [INFO] middleware.py:24 - [tool_monitor]传入参数,{'city': '杭州'}
+2026-04-21 16:44:22 [INFO] middleware.py:28 - [tool_monitor]工具,get_weather调用成功
+2026-04-21 16:44:22 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有5条消息。
+2026-04-21 16:44:22 [DEBUG] middleware.py:44 - [log_before_model]ToolMessage | 城市杭州天气为晴天，26摄氏度，空气湿度50%，南风1级，AQI21，最近6小时降雨概率极低 
+2026-04-21 16:44:25 [INFO] middleware.py:23 - [tool_monitor]执行工具,rag_summarize
+2026-04-21 16:44:25 [INFO] middleware.py:24 - [tool_monitor]传入参数,{'query': '扫地机器人在晴天中等湿度环境下的保养方法'}
+2026-04-21 16:44:29 [INFO] middleware.py:28 - [tool_monitor]工具,rag_summarize调用成功
+2026-04-21 16:44:29 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有7条消息。
+2026-04-21 16:44:29 [DEBUG] middleware.py:44 - [log_before_model]ToolMessage | 晴天中等湿度环境下，扫地机器人使用后应及时用干软布擦拭机身外壳，清除灰尘和水渍；每次清扫完成后清理防撞条缝隙中的毛发和线头，防止卡顿。 
+2026-04-21 16:44:58 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-21 16:44:58 [DEBUG] middleware.py:44 - [log_before_model]HumanMessage | 给我生成一个简易的报告 
+2026-04-21 16:45:01 [INFO] middleware.py:23 - [tool_monitor]执行工具,get_user_id
+2026-04-21 16:45:01 [INFO] middleware.py:24 - [tool_monitor]传入参数,{}
+2026-04-21 16:45:01 [INFO] middleware.py:28 - [tool_monitor]工具,get_user_id调用成功
+2026-04-21 16:45:01 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有3条消息。
+2026-04-21 16:45:01 [DEBUG] middleware.py:44 - [log_before_model]ToolMessage | 1009 
+2026-04-21 16:45:03 [INFO] middleware.py:23 - [tool_monitor]执行工具,get_current_month
+2026-04-21 16:45:03 [INFO] middleware.py:24 - [tool_monitor]传入参数,{}
+2026-04-21 16:45:03 [INFO] middleware.py:28 - [tool_monitor]工具,get_current_month调用成功
+2026-04-21 16:45:03 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有5条消息。
+2026-04-21 16:45:03 [DEBUG] middleware.py:44 - [log_before_model]ToolMessage | 2025-09 
+2026-04-21 16:45:06 [INFO] middleware.py:23 - [tool_monitor]执行工具,fill_conent_for_report
+2026-04-21 16:45:06 [INFO] middleware.py:24 - [tool_monitor]传入参数,{}
+2026-04-21 16:45:06 [INFO] middleware.py:28 - [tool_monitor]工具,fill_conent_for_report调用成功
+2026-04-21 16:45:06 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有7条消息。
+2026-04-21 16:45:06 [DEBUG] middleware.py:44 - [log_before_model]ToolMessage | fill_conent_for_report已调用 
+2026-04-21 16:45:10 [INFO] middleware.py:23 - [tool_monitor]执行工具,fetch_external_data
+2026-04-21 16:45:10 [INFO] middleware.py:24 - [tool_monitor]传入参数,{'user_id': '1009', 'month': '2025-09'}
+2026-04-21 16:45:10 [INFO] middleware.py:28 - [tool_monitor]工具,fetch_external_data调用成功
+2026-04-21 16:45:10 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有9条消息。
+2026-04-21 16:45:10 [DEBUG] middleware.py:44 - [log_before_model]ToolMessage | {"特征": "80㎡两居 | 养宠 | 仿实木", "效率": "宠物毛发清理:86%\\n自动回充成功率:92%", "耗材": "胶刷缠绕:中度\\n滤网更换:剩余30天", "对比": "养宠家庭中清洁效率回升至中等水平", "时间": "2025-09"} 
+2026-04-21 16:47:53 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-21 16:47:53 [DEBUG] middleware.py:44 - [log_before_model]HumanMessage | 你好啊小爱 
+2026-04-21 16:48:25 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-21 16:48:25 [DEBUG] middleware.py:44 - [log_before_model]HumanMessage | 请帮我查询下我当前城市的天气 
+2026-04-21 16:48:28 [INFO] middleware.py:23 - [tool_monitor]执行工具,get_user_location
+2026-04-21 16:48:28 [INFO] middleware.py:24 - [tool_monitor]传入参数,{}
+2026-04-21 16:48:28 [INFO] middleware.py:28 - [tool_monitor]工具,get_user_location调用成功
+2026-04-21 16:48:28 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有3条消息。
+2026-04-21 16:48:28 [DEBUG] middleware.py:44 - [log_before_model]ToolMessage | 合肥 
+2026-04-21 16:48:31 [INFO] middleware.py:23 - [tool_monitor]执行工具,get_weather
+2026-04-21 16:48:31 [INFO] middleware.py:24 - [tool_monitor]传入参数,{'city': '合肥'}
+2026-04-21 16:48:31 [INFO] middleware.py:28 - [tool_monitor]工具,get_weather调用成功
+2026-04-21 16:48:31 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有5条消息。
+2026-04-21 16:48:31 [DEBUG] middleware.py:44 - [log_before_model]ToolMessage | 城市合肥天气为晴天，26摄氏度，空气湿度50%，南风1级，AQI21，最近6小时降雨概率极低 
+2026-04-21 16:50:37 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-21 16:50:37 [DEBUG] middleware.py:44 - [log_before_model]HumanMessage | 你好小艾 
+2026-04-21 16:51:09 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-21 16:51:09 [DEBUG] middleware.py:44 - [log_before_model]HumanMessage | 帮我看一下在我这个城市我该怎么使用这个扫地机器人？ 
+2026-04-21 16:51:12 [INFO] middleware.py:23 - [tool_monitor]执行工具,get_user_location
+2026-04-21 16:51:12 [INFO] middleware.py:24 - [tool_monitor]传入参数,{}
+2026-04-21 16:51:12 [INFO] middleware.py:28 - [tool_monitor]工具,get_user_location调用成功
+2026-04-21 16:51:12 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有3条消息。
+2026-04-21 16:51:12 [DEBUG] middleware.py:44 - [log_before_model]ToolMessage | 杭州 
+2026-04-21 16:51:15 [INFO] middleware.py:23 - [tool_monitor]执行工具,get_weather
+2026-04-21 16:51:15 [INFO] middleware.py:24 - [tool_monitor]传入参数,{'city': '杭州'}
+2026-04-21 16:51:15 [INFO] middleware.py:28 - [tool_monitor]工具,get_weather调用成功
+2026-04-21 16:51:15 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有5条消息。
+2026-04-21 16:51:15 [DEBUG] middleware.py:44 - [log_before_model]ToolMessage | 城市杭州天气为晴天，26摄氏度，空气湿度50%，南风1级，AQI21，最近6小时降雨概率极低 
+2026-04-21 16:51:20 [INFO] middleware.py:23 - [tool_monitor]执行工具,rag_summarize
+2026-04-21 16:51:20 [INFO] middleware.py:24 - [tool_monitor]传入参数,{'query': '扫地机器人在湿度50%、晴天、无雨环境下的使用建议和注意事项'}
+2026-04-21 16:51:25 [INFO] middleware.py:28 - [tool_monitor]工具,rag_summarize调用成功
+2026-04-21 16:51:25 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有7条消息。
+2026-04-21 16:51:25 [DEBUG] middleware.py:44 - [log_before_model]ToolMessage | 在湿度50%、晴天、无雨环境下，属于常规干燥环境，可正常使用扫地机器人。建议根据地面材质调整拖地出水量（如木地板用低档出水量或干拖模式，瓷砖/大理石拖地后及时清理底部水渍），每日清理尘盒，定期清洁滤网和刷子，避免灰尘堆积影响性能。若环境多尘，应关闭拖地功能以防灰尘与水混合结块。 
+2026-04-21 16:51:48 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有1条消息。
+2026-04-21 16:51:48 [DEBUG] middleware.py:44 - [log_before_model]HumanMessage | 给我生成个简易的报告 
+2026-04-21 16:51:52 [INFO] middleware.py:23 - [tool_monitor]执行工具,get_user_id
+2026-04-21 16:51:52 [INFO] middleware.py:24 - [tool_monitor]传入参数,{}
+2026-04-21 16:51:52 [INFO] middleware.py:28 - [tool_monitor]工具,get_user_id调用成功
+2026-04-21 16:51:52 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有3条消息。
+2026-04-21 16:51:52 [DEBUG] middleware.py:44 - [log_before_model]ToolMessage | 1002 
+2026-04-21 16:51:54 [INFO] middleware.py:23 - [tool_monitor]执行工具,get_current_month
+2026-04-21 16:51:54 [INFO] middleware.py:24 - [tool_monitor]传入参数,{}
+2026-04-21 16:51:54 [INFO] middleware.py:28 - [tool_monitor]工具,get_current_month调用成功
+2026-04-21 16:51:54 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有5条消息。
+2026-04-21 16:51:54 [DEBUG] middleware.py:44 - [log_before_model]ToolMessage | 2025-11 
+2026-04-21 16:51:56 [INFO] middleware.py:23 - [tool_monitor]执行工具,fill_conent_for_report
+2026-04-21 16:51:56 [INFO] middleware.py:24 - [tool_monitor]传入参数,{}
+2026-04-21 16:51:56 [INFO] middleware.py:28 - [tool_monitor]工具,fill_conent_for_report调用成功
+2026-04-21 16:51:56 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有7条消息。
+2026-04-21 16:51:56 [DEBUG] middleware.py:44 - [log_before_model]ToolMessage | fill_conent_for_report已调用 
+2026-04-21 16:52:00 [INFO] middleware.py:23 - [tool_monitor]执行工具,fetch_external_data
+2026-04-21 16:52:00 [INFO] middleware.py:24 - [tool_monitor]传入参数,{'user_id': '1002', 'month': '2025-11'}
+2026-04-21 16:52:00 [INFO] middleware.py:28 - [tool_monitor]工具,fetch_external_data调用成功
+2026-04-21 16:52:00 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有9条消息。
+2026-04-21 16:52:00 [DEBUG] middleware.py:44 - [log_before_model]ToolMessage | {"特征": "70㎡公寓 | 情侣 | 瓷砖", "效率": "覆盖率:90%\\n避障失败:0次/周", "耗材": "边刷寿命:剩余45天\\n尘盒清理:每4天", "对比": "拖地功能使用率与同类平均水平持平", "时间": "2025-11"} 

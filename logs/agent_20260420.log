@@ -1,0 +1,10 @@
+2026-04-20 14:22:54 [INFO] logger_handler.py:56 - 应用启动
+2026-04-20 14:22:54 [DEBUG] logger_handler.py:57 - 数据库连接成功
+2026-04-20 14:22:54 [ERROR] logger_handler.py:58 - 文件未找到
+NoneType: None
+2026-04-20 14:25:22 [INFO] logger_handler.py:56 - 应用启动
+2026-04-20 14:25:22 [DEBUG] logger_handler.py:57 - 数据库连接成功
+2026-04-20 14:25:22 [WARNING] logger_handler.py:58 - 警告日志
+2026-04-20 14:25:22 [CRITICAL] logger_handler.py:59 - 严重错误
+2026-04-20 14:25:22 [ERROR] logger_handler.py:60 - 文件未找到
+NoneType: None
