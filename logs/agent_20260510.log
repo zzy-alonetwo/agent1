@@ -1,0 +1,82 @@
+2026-05-10 17:12:44 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\扫地机器人100问.pdf已经存入知识库中，跳过
+2026-05-10 17:12:44 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\扫地机器人100问2.txt已经存入知识库中，跳过
+2026-05-10 17:12:44 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\扫拖一体机器人100问.txt已经存入知识库中，跳过
+2026-05-10 17:12:44 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\故障排除.txt已经存入知识库中，跳过
+2026-05-10 17:12:44 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\维护保养.txt已经存入知识库中，跳过
+2026-05-10 17:12:44 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\选购指南.txt已经存入知识库中，跳过
+2026-05-10 17:19:06 [ERROR] file_handler.py:76 - [docx_loader]D:\Flask\Agent_Project\data\使用说明书中文版.docx加载失败: unstructured package not found, please install it with `pip install unstructured`
+2026-05-10 17:19:06 [WARNING] vector_store.py:80 - [加载知识库]D:\Flask\Agent_Project\data\使用说明书中文版.docx内没有有效文本内容，跳过
+2026-05-10 17:19:06 [ERROR] file_handler.py:85 - [doc_loader]D:\Flask\Agent_Project\data\使用说明书英文版.doc加载失败: unstructured package not found, please install it with `pip install unstructured`
+2026-05-10 17:19:06 [WARNING] vector_store.py:80 - [加载知识库]D:\Flask\Agent_Project\data\使用说明书英文版.doc内没有有效文本内容，跳过
+2026-05-10 17:19:06 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\扫地机器人100问.pdf已经存入知识库中，跳过
+2026-05-10 17:19:06 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\扫地机器人100问2.txt已经存入知识库中，跳过
+2026-05-10 17:19:06 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\扫拖一体机器人100问.txt已经存入知识库中，跳过
+2026-05-10 17:19:06 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\故障排除.txt已经存入知识库中，跳过
+2026-05-10 17:19:06 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\维护保养.txt已经存入知识库中，跳过
+2026-05-10 17:19:06 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\选购指南.txt已经存入知识库中，跳过
+2026-05-10 17:20:06 [ERROR] file_handler.py:76 - [docx_loader]D:\Flask\Agent_Project\data\使用说明书中文版.docx加载失败: unstructured package not found, please install it with `pip install unstructured`
+2026-05-10 17:20:06 [WARNING] vector_store.py:80 - [加载知识库]D:\Flask\Agent_Project\data\使用说明书中文版.docx内没有有效文本内容，跳过
+2026-05-10 17:20:06 [ERROR] file_handler.py:85 - [doc_loader]D:\Flask\Agent_Project\data\使用说明书英文版.doc加载失败: unstructured package not found, please install it with `pip install unstructured`
+2026-05-10 17:20:06 [WARNING] vector_store.py:80 - [加载知识库]D:\Flask\Agent_Project\data\使用说明书英文版.doc内没有有效文本内容，跳过
+2026-05-10 17:20:06 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\扫地机器人100问.pdf已经存入知识库中，跳过
+2026-05-10 17:20:06 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\扫地机器人100问2.txt已经存入知识库中，跳过
+2026-05-10 17:20:06 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\扫拖一体机器人100问.txt已经存入知识库中，跳过
+2026-05-10 17:20:06 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\故障排除.txt已经存入知识库中，跳过
+2026-05-10 17:20:06 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\维护保养.txt已经存入知识库中，跳过
+2026-05-10 17:20:06 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\选购指南.txt已经存入知识库中，跳过
+2026-05-10 17:24:52 [WARNING] file_handler.py:23 - python-docx not installed, docx support disabled
+2026-05-10 17:24:52 [WARNING] file_handler.py:29 - openpyxl not installed, xlsx support disabled
+2026-05-10 17:24:52 [WARNING] file_handler.py:35 - markdown not installed, md support disabled
+2026-05-10 17:25:01 [INFO] vector_store.py:91 - [加载知识库]D:\Flask\Agent_Project\data\records.csv内容加载成功
+2026-05-10 17:25:01 [ERROR] file_handler.py:100 - [docx_loader]D:\Flask\Agent_Project\data\使用说明书中文版.docx加载失败: python-docx not installed
+2026-05-10 17:25:01 [WARNING] vector_store.py:80 - [加载知识库]D:\Flask\Agent_Project\data\使用说明书中文版.docx内没有有效文本内容，跳过
+2026-05-10 17:25:01 [ERROR] file_handler.py:139 - [doc_loader]D:\Flask\Agent_Project\data\使用说明书英文版.doc加载失败: [WinError 2] 系统找不到指定的文件。
+2026-05-10 17:25:01 [WARNING] vector_store.py:80 - [加载知识库]D:\Flask\Agent_Project\data\使用说明书英文版.doc内没有有效文本内容，跳过
+2026-05-10 17:25:01 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\扫地机器人100问.pdf已经存入知识库中，跳过
+2026-05-10 17:25:01 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\扫地机器人100问2.txt已经存入知识库中，跳过
+2026-05-10 17:25:01 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\扫拖一体机器人100问.txt已经存入知识库中，跳过
+2026-05-10 17:25:01 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\故障排除.txt已经存入知识库中，跳过
+2026-05-10 17:25:01 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\维护保养.txt已经存入知识库中，跳过
+2026-05-10 17:25:01 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\选购指南.txt已经存入知识库中，跳过
+2026-05-10 17:25:36 [WARNING] file_handler.py:23 - python-docx not installed, docx support disabled
+2026-05-10 17:25:36 [WARNING] file_handler.py:29 - openpyxl not installed, xlsx support disabled
+2026-05-10 17:25:36 [WARNING] file_handler.py:35 - markdown not installed, md support disabled
+2026-05-10 17:25:36 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\records.csv已经存入知识库中，跳过
+2026-05-10 17:25:36 [ERROR] file_handler.py:100 - [docx_loader]D:\Flask\Agent_Project\data\使用说明书中文版.docx加载失败: python-docx not installed
+2026-05-10 17:25:36 [WARNING] vector_store.py:80 - [加载知识库]D:\Flask\Agent_Project\data\使用说明书中文版.docx内没有有效文本内容，跳过
+2026-05-10 17:25:36 [ERROR] file_handler.py:139 - [doc_loader]D:\Flask\Agent_Project\data\使用说明书英文版.doc加载失败: [WinError 2] 系统找不到指定的文件。
+2026-05-10 17:25:36 [WARNING] vector_store.py:80 - [加载知识库]D:\Flask\Agent_Project\data\使用说明书英文版.doc内没有有效文本内容，跳过
+2026-05-10 17:25:36 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\扫地机器人100问.pdf已经存入知识库中，跳过
+2026-05-10 17:25:36 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\扫地机器人100问2.txt已经存入知识库中，跳过
+2026-05-10 17:25:36 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\扫拖一体机器人100问.txt已经存入知识库中，跳过
+2026-05-10 17:25:36 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\故障排除.txt已经存入知识库中，跳过
+2026-05-10 17:25:36 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\维护保养.txt已经存入知识库中，跳过
+2026-05-10 17:25:36 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\选购指南.txt已经存入知识库中，跳过
+2026-05-10 17:29:35 [WARNING] file_handler.py:23 - python-docx not installed, docx support disabled
+2026-05-10 17:29:35 [WARNING] file_handler.py:29 - openpyxl not installed, xlsx support disabled
+2026-05-10 17:29:35 [WARNING] file_handler.py:35 - markdown not installed, md support disabled
+2026-05-10 17:29:35 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\records.csv已经存入知识库中，跳过
+2026-05-10 17:29:35 [ERROR] file_handler.py:100 - [docx_loader]D:\Flask\Agent_Project\data\使用说明书中文版.docx加载失败: python-docx not installed
+2026-05-10 17:29:35 [WARNING] vector_store.py:80 - [加载知识库]D:\Flask\Agent_Project\data\使用说明书中文版.docx内没有有效文本内容，跳过
+2026-05-10 17:29:35 [ERROR] file_handler.py:139 - [doc_loader]D:\Flask\Agent_Project\data\使用说明书英文版.doc加载失败: [WinError 2] 系统找不到指定的文件。
+2026-05-10 17:29:35 [WARNING] vector_store.py:80 - [加载知识库]D:\Flask\Agent_Project\data\使用说明书英文版.doc内没有有效文本内容，跳过
+2026-05-10 17:29:35 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\扫地机器人100问.pdf已经存入知识库中，跳过
+2026-05-10 17:29:35 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\扫地机器人100问2.txt已经存入知识库中，跳过
+2026-05-10 17:29:35 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\扫拖一体机器人100问.txt已经存入知识库中，跳过
+2026-05-10 17:29:35 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\故障排除.txt已经存入知识库中，跳过
+2026-05-10 17:29:35 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\维护保养.txt已经存入知识库中，跳过
+2026-05-10 17:29:35 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\选购指南.txt已经存入知识库中，跳过
+2026-05-10 17:30:05 [WARNING] file_handler.py:23 - python-docx not installed, docx support disabled
+2026-05-10 17:30:05 [WARNING] file_handler.py:29 - openpyxl not installed, xlsx support disabled
+2026-05-10 17:30:05 [WARNING] file_handler.py:35 - markdown not installed, md support disabled
+2026-05-10 17:30:05 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\records.csv已经存入知识库中，跳过
+2026-05-10 17:30:05 [ERROR] file_handler.py:100 - [docx_loader]D:\Flask\Agent_Project\data\使用说明书中文版.docx加载失败: python-docx not installed
+2026-05-10 17:30:05 [WARNING] vector_store.py:80 - [加载知识库]D:\Flask\Agent_Project\data\使用说明书中文版.docx内没有有效文本内容，跳过
+2026-05-10 17:30:05 [ERROR] file_handler.py:139 - [doc_loader]D:\Flask\Agent_Project\data\使用说明书英文版.doc加载失败: [WinError 2] 系统找不到指定的文件。
+2026-05-10 17:30:05 [WARNING] vector_store.py:80 - [加载知识库]D:\Flask\Agent_Project\data\使用说明书英文版.doc内没有有效文本内容，跳过
+2026-05-10 17:30:05 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\扫地机器人100问.pdf已经存入知识库中，跳过
+2026-05-10 17:30:05 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\扫地机器人100问2.txt已经存入知识库中，跳过
+2026-05-10 17:30:05 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\扫拖一体机器人100问.txt已经存入知识库中，跳过
+2026-05-10 17:30:05 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\故障排除.txt已经存入知识库中，跳过
+2026-05-10 17:30:05 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\维护保养.txt已经存入知识库中，跳过
+2026-05-10 17:30:05 [INFO] vector_store.py:74 - [加载知识库]D:\Flask\Agent_Project\data\选购指南.txt已经存入知识库中，跳过

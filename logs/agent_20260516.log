@@ -1,0 +1,34 @@
+2026-05-16 15:05:25 [INFO] vector_store.py:119 - ✅ MySQL 表创建成功
+2026-05-16 15:05:25 [INFO] vector_store.py:50 - ✅ MySQL 连接初始化成功
+2026-05-16 15:05:27 [INFO] vector_store.py:77 - ✅ Redis 连接初始化成功
+2026-05-16 15:05:27 [INFO] vector_store.py:156 - 🔄 使用 MySQL + Redis 作为向量存储后端
+2026-05-16 15:05:39 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有1条消息。
+2026-05-16 15:05:39 [DEBUG] middleware.py:44 - [log_before_model]HumanMessage | 你好小爱 
+2026-05-16 15:07:52 [INFO] vector_store.py:119 - ✅ MySQL 表创建成功
+2026-05-16 15:07:52 [INFO] vector_store.py:50 - ✅ MySQL 连接初始化成功
+2026-05-16 15:07:54 [INFO] vector_store.py:77 - ✅ Redis 连接初始化成功
+2026-05-16 15:07:54 [INFO] vector_store.py:156 - 🔄 使用 MySQL + Redis 作为向量存储后端
+2026-05-16 15:08:19 [INFO] vector_store.py:119 - ✅ MySQL 表创建成功
+2026-05-16 15:08:19 [INFO] vector_store.py:50 - ✅ MySQL 连接初始化成功
+2026-05-16 15:08:21 [INFO] vector_store.py:77 - ✅ Redis 连接初始化成功
+2026-05-16 15:08:21 [INFO] vector_store.py:156 - 🔄 使用 MySQL + Redis 作为向量存储后端
+2026-05-16 15:08:39 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有1条消息。
+2026-05-16 15:08:39 [DEBUG] middleware.py:44 - [log_before_model]HumanMessage | 你好小爱 
+2026-05-16 15:11:40 [INFO] vector_store.py:119 - ✅ MySQL 表创建成功
+2026-05-16 15:11:40 [INFO] vector_store.py:50 - ✅ MySQL 连接初始化成功
+2026-05-16 15:11:42 [INFO] vector_store.py:77 - ✅ Redis 连接初始化成功
+2026-05-16 15:11:42 [INFO] vector_store.py:156 - 🔄 使用 MySQL + Redis 作为向量存储后端
+2026-05-16 15:11:50 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有1条消息。
+2026-05-16 15:11:50 [DEBUG] middleware.py:44 - [log_before_model]HumanMessage | 你好 
+2026-05-16 15:12:12 [INFO] vector_store.py:119 - ✅ MySQL 表创建成功
+2026-05-16 15:12:12 [INFO] vector_store.py:50 - ✅ MySQL 连接初始化成功
+2026-05-16 15:12:14 [INFO] vector_store.py:77 - ✅ Redis 连接初始化成功
+2026-05-16 15:12:14 [INFO] vector_store.py:156 - 🔄 使用 MySQL + Redis 作为向量存储后端
+2026-05-16 15:12:14 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有1条消息。
+2026-05-16 15:12:14 [DEBUG] middleware.py:44 - [log_before_model]HumanMessage | 故障排查 
+2026-05-16 15:13:25 [INFO] vector_store.py:119 - ✅ MySQL 表创建成功
+2026-05-16 15:13:25 [INFO] vector_store.py:50 - ✅ MySQL 连接初始化成功
+2026-05-16 15:13:27 [INFO] vector_store.py:77 - ✅ Redis 连接初始化成功
+2026-05-16 15:13:27 [INFO] vector_store.py:156 - 🔄 使用 MySQL + Redis 作为向量存储后端
+2026-05-16 15:13:36 [INFO] middleware.py:42 - [log_before_model]即将调用模型，带有1条消息。
+2026-05-16 15:13:36 [DEBUG] middleware.py:44 - [log_before_model]HumanMessage | 你好小爱 

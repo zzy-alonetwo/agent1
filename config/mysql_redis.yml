@@ -1,0 +1,38 @@
+# MySQL + Redis 配置
+# 启用 MySQL + Redis 作为向量存储后端
+enabled: true
+
+# MySQL 配置
+mysql:
+  host: localhost
+  port: 3306
+  database: agent_knowledge
+  username: root
+  password: "123456"
+  charset: utf8mb4
+
+# Redis 配置
+redis:
+  host: localhost
+  port: 6379
+  password: 123456
+  db: 0
+  # 向量存储的 key 前缀
+  vector_prefix: "vector:"
+  # 文档元数据的 key 前缀
+  doc_prefix: "doc:"
+
+# 文档处理配置
+chunk_size: 200
+chunk_overlap: 20
+separators: ["\n\n", "\n", ".", "!", "?", "。", "！", "？", " ", ""]
+
+# 检索配置
+k: 3
+
+# 数据路径
+data_path: data
+md5_hex_store: md5_mysql.text
+
+# 允许的文件类型
+allow_knowledge_file_type: ["txt", "pdf", "csv"]
